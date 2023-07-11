@@ -16,8 +16,5 @@ lazy val ports = (project in file("ports"))
   .aggregate(core)
   .settings(
     name := "food-service-ports",
-    libraryDependencies ++= commonDeps
+    libraryDependencies ++= commonDeps ++ portsDeps
   )
-
-
-// See https://www.scala-sbt.org/1.x/docs/Using-Sonatype.html for instructions on how to publish to Sonatype.
